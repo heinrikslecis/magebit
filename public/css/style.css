@@ -1,0 +1,621 @@
+/*============ CUSTOM ICON FONT ============*/
+@font-face {
+  font-family: "magebit";
+  src: url("fonts/magebit.eot?hs9mt2");
+  src: url("fonts/magebit.eot?hs9mt2#iefix") format("embedded-opentype"), url("fonts/magebit.ttf?hs9mt2") format("truetype"), url("fonts/magebit.woff?hs9mt2") format("woff"), url("fonts/magebit.svg?hs9mt2#magebit") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=ic-],
+[class*=" ic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "magebit" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-union:before {
+  content: "\e904";
+  color: #4066a5;
+}
+
+.ic-pineapple:before {
+  content: "\e905";
+}
+
+.ic-checkmark:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.ic-arrow:before {
+  content: "\e907";
+}
+
+.ic-success .path1:before {
+  font-family: "magebit" !important;
+  content: "\e908";
+  color: #4066a5;
+}
+
+.ic-success .path2:before {
+  font-family: "magebit" !important;
+  content: "\e909";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+}
+
+.ic-success .path3:before {
+  font-family: "magebit" !important;
+  content: "\e90a";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.ic-success .path4:before {
+  font-family: "magebit" !important;
+  content: "\e90b";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.ic-success .path5:before {
+  font-family: "magebit" !important;
+  content: "\e90c";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.ic-success .path6:before {
+  font-family: "magebit" !important;
+  content: "\e90d";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.ic-success .path7:before {
+  font-family: "magebit" !important;
+  content: "\e90e";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.ic-youtube:before {
+  content: "\e900";
+}
+
+.ic-twitter:before {
+  content: "\e901";
+}
+
+.ic-instagram:before {
+  content: "\e902";
+}
+
+.ic-facebook:before {
+  content: "\e903";
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  color: #6a707b;
+}
+
+/*============ CHECKBOX ============*/
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin: 5.3rem 4rem 0 4rem;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+}
+.checkbox-container input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 2.6rem;
+  width: 2.6rem;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+  /* When the checkbox is checked, add a blue background */
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #4066a5;
+  border: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.6rem;
+  width: 2.6rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #e3e3e4;
+  box-sizing: border-box;
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Style the checkmark/indicator */
+}
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.6rem;
+  top: 0.8rem;
+  font-size: 1.1rem;
+  font-family: "magebit" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "\e906";
+  color: #fff;
+}
+.checkbox-container .checkmark:after {
+  left: 0.6rem;
+  top: 0.8rem;
+  font-size: 1.1rem;
+  font-family: "magebit" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "\e906";
+  color: #fff;
+}
+.checkbox-container p {
+  margin-left: 0.6rem;
+  display: inline;
+  font-size: 1.6rem;
+}
+.checkbox-container a {
+  color: #131821;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+.checkbox-container a:hover {
+  color: #4066a5;
+}
+.checkbox-container a:active {
+  color: #233759;
+}
+
+/*============ NAVIGATION BAR ============*/
+.navbar {
+  font-size: 1.6rem;
+}
+.navbar .ic-union {
+  font-size: 4rem;
+}
+.navbar .ic-pineapple {
+  position: relative;
+  bottom: 0.2rem;
+  margin: 1.1rem;
+  color: #131821;
+}
+.navbar .nav-menu {
+  float: right;
+  margin-top: 2rem;
+}
+.navbar .nav-menu .nav-item {
+  display: inline;
+  margin-left: 2.7rem;
+}
+.navbar .nav-menu .nav-item .nav-link {
+  text-decoration: none;
+  color: #6a707b;
+}
+
+/*============ CONTENT ============*/
+section {
+  overflow: overlay;
+}
+
+.main-content {
+  margin-top: 23.4rem;
+}
+.main-content .main-text h1 {
+  font-family: Georgia;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #131821;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0.5rem 4rem 1.5rem 4rem;
+}
+.main-content .main-text p {
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  margin: 0.5rem 4rem 1.5rem 4rem;
+}
+.main-content.subscribe .ic-success {
+  display: block;
+  font-size: 7rem;
+  margin-bottom: 3rem;
+}
+.main-content.subscribe .main-text h1,
+.main-content.subscribe .main-text p {
+  margin: 0;
+}
+.main-content.subscribe .main-text p {
+  margin-top: 2rem;
+}
+
+.container-image {
+  background: #c4c4c4;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/image_summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* This is the style of our error messages */
+.error {
+  font-size: 1.6rem;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 0.5rem 0.5rem;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.2rem;
+}
+
+/*============ EMAIL ============*/
+.email {
+  position: relative;
+  margin-top: 5rem;
+}
+.email input#mail {
+  width: 66.3rem;
+  height: 7rem;
+  padding: 2.3rem 17rem 2.3rem 4rem;
+  background: #ffffff;
+  border: 0.1rem solid #e3e3e4;
+  border-left: 0.4rem solid #4066a5;
+  font-size: 1.6rem;
+}
+.email input#mail:hover {
+  box-shadow: 0 3rem 4rem rgba(19, 24, 33, 0.06);
+  color: #131821;
+  border: 0.1rem solid #4066a5;
+  border-left: 0.4rem solid #4066a5;
+}
+.email input#mail:hover ~ .ic-arrow::before {
+  color: #4066a5;
+  opacity: 1;
+}
+.email input#mail:hover ~ .ic-arrow.disabled:before {
+  opacity: 0.3;
+  color: #131821;
+}
+.email input#mail:focus {
+  box-shadow: 0 3rem 4rem rgba(19, 24, 33, 0.06);
+  outline: none !important;
+  border: 0.1rem solid #4066a5;
+  border-left: 0.4rem solid #4066a5;
+}
+.email #submit-btn {
+  position: absolute;
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  width: 8.3rem;
+  height: 7rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.email #submit-btn:hover + input#mail {
+  box-shadow: 0 3rem 4rem rgba(19, 24, 33, 0.06);
+  color: #131821;
+  border: 0.1rem solid #4066a5;
+  border-left: 0.4rem solid #4066a5;
+}
+.email #submit-btn:hover ~ .ic-arrow::before {
+  color: #4066a5;
+  opacity: 1;
+}
+.email #submit-btn:hover ~ .ic-arrow.disabled:before {
+  opacity: 0.3;
+  color: #131821;
+}
+.email .ic-arrow:before {
+  position: absolute;
+  font-size: 1.4rem;
+  opacity: 0.3;
+  color: #131821;
+  top: 2.8rem;
+}
+
+/*============ FOOTER ============*/
+hr {
+  margin: 5rem 4rem 5rem 4rem;
+  border: 0;
+  border-bottom: 0.1rem solid #e3e3e4;
+}
+hr.subscribe {
+  margin: 5rem 0;
+}
+
+.icons {
+  text-align: center;
+}
+.icons .socials {
+  display: inline-block;
+  border: 0.2rem solid #e2e3e4;
+  border-radius: 50%;
+  margin: 0 0.8rem 0 0.9rem;
+  text-decoration: none;
+}
+.icons .socials:hover, .icons .socials:active {
+  box-shadow: 0 2rem 4rem rgba(19, 24, 33, 0.3);
+}
+.icons .socials span {
+  color: #131821;
+  opacity: 0.3;
+  display: table-row;
+}
+.icons .socials:hover span, .icons .socials:active span {
+  color: #ffffff;
+  opacity: 1;
+}
+.icons .socials .ic-instagram,
+.icons .socials .ic-facebook {
+  font-size: 1.6rem;
+}
+.icons .socials .ic-youtube {
+  font-size: 1.1rem;
+}
+.icons .socials .ic-twitter {
+  font-size: 1.3rem;
+}
+.icons #facebook:hover {
+  background-color: #4267b2;
+  border-color: #4267b2;
+}
+.icons #instagram:hover {
+  background-color: #c13584;
+  border-color: #c13584;
+}
+.icons #twitter:hover {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+.icons #youtube:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+.icons #facebook:active {
+  background-color: #2f4a80;
+  border-color: #2f4a80;
+}
+.icons #instagram:active {
+  background-color: #8f2762;
+  border-color: #8f2762;
+}
+.icons #twitter:active {
+  background-color: #177fbf;
+  border-color: #177fbf;
+}
+.icons #youtube:active {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+.icons #facebook {
+  padding: 1.3rem 1.7rem;
+}
+.icons #instagram {
+  padding: 1.3rem;
+}
+.icons #twitter {
+  padding: 1.5rem 1.3rem 1.4rem 1.3rem;
+}
+.icons #youtube {
+  padding: 1.5rem 1.3rem 1.6rem 1.3rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+  /*============ NAVIGATION ============*/
+  .navbar {
+    padding: 1rem 2rem 1.6rem 2rem;
+    background: #ffffff;
+    min-width: 33.5rem;
+  }
+  .navbar .nav-menu {
+    margin-top: 1.6rem;
+  }
+  .navbar .nav-menu .nav-item {
+    margin-left: 1.6rem;
+  }
+  .navbar .nav-menu .nav-item .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .ic-pineapple {
+    display: none;
+  }
+
+  /*============ CONTENT ============*/
+  .left {
+    padding: 0;
+    width: 100%;
+  }
+
+  .right {
+    position: absolute;
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 3rem 2rem 3rem 2rem;
+    width: 33.5rem;
+    margin-top: 18.8rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-content.subscribe .ic-success {
+    margin-bottom: 3.9rem;
+  }
+  .main-content .main-text h1 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin: 0;
+  }
+  .main-content .main-text p {
+    line-height: 2.6rem;
+    padding: 0;
+    margin: 1rem 0 2rem 0;
+    font-size: 1.4rem;
+  }
+  .main-content .main-text.subscribe {
+    margin-bottom: 3.9rem;
+  }
+  .main-content .main-text.subscribe p {
+    margin-top: 1rem;
+  }
+
+  .container-image {
+    position: absolute;
+    min-width: 0;
+    min-height: 0;
+    float: none;
+  }
+
+  /*============ EMAIL ============*/
+  .email {
+    margin: 0;
+  }
+  .email input#mail {
+    height: 6rem;
+    padding: 1.8rem 4.9rem 1.8rem 1.5rem;
+    width: 29.5rem;
+    font-size: 1.6rem;
+  }
+  .email #submit-btn {
+    right: 0;
+    height: 6rem;
+    width: 5rem;
+  }
+  .email .ic-arrow::before {
+    right: 2rem;
+    top: 2.3rem;
+  }
+  .email .error {
+    width: 100%;
+    font-size: 1.4rem;
+    position: relative;
+  }
+
+  /*============ CHECKBOX ============*/
+  .checkbox-container {
+    margin: 2rem 0 0 0;
+  }
+  .checkbox-container p,
+.checkbox-container a {
+    font-size: 1.6rem;
+  }
+
+  /*============ FOOTER ============*/
+  hr.subscribe,
+hr {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .icons {
+    margin-left: 3rem;
+    text-align: unset;
+  }
+  .icons .socials {
+    margin: 0 0.4rem 0 0.3rem;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .left {
+    padding: 10rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+    width: 68rem;
+    height: 100%;
+    min-height: 94rem;
+  }
+
+  .right {
+    position: relative;
+    min-height: 94rem;
+    width: calc(100% - 68rem);
+  }
+
+  .ic-arrow:before {
+    left: 59.9rem;
+  }
+
+  button[type=submit] {
+    left: 58rem;
+  }
+
+  .main-content.subscribe {
+    margin: 12.9rem 4rem 4rem;
+  }
+}
+.left {
+  float: left;
+  z-index: 1;
+  position: relative;
+}
+
+.right {
+  float: left;
+  height: 100%;
+}
+
+body,
+html,
+main,
+.section {
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

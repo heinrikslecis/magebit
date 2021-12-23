@@ -1,0 +1,17 @@
+.left {
+  float: left;
+  z-index: 1;
+  position: relative;
+}
+
+.right {
+  float: left;
+  height: 100%;
+}
+
+body,
+html,
+main,
+.section {
+  height: 100%;
+}

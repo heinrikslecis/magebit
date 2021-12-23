@@ -1,0 +1,97 @@
+/*============ CHECKBOX ============*/
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin: 5.3rem 4rem 0 4rem;
+
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 2.6rem;
+    width: 2.6rem;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+
+    /* When the checkbox is checked, add a blue background */
+    &:checked ~ .checkmark {
+      background-color: $color-blue;
+      border: none;
+    }
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    border: 0.1rem solid $color-grey-light;
+    box-sizing: border-box;
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 0.6rem;
+      top: 0.8rem;
+      font-size: 1.1rem;
+      font-family: "magebit" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      content: "\e906";
+      color: #fff;
+    }
+
+    /* Style the checkmark/indicator */
+    &:after {
+      left: 0.6rem;
+      top: 0.8rem;
+      font-size: 1.1rem;
+      font-family: "magebit" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      content: "\e906";
+      color: #fff;
+    }
+  }
+
+  p {
+    margin-left: 0.6rem;
+    display: inline;
+    font-size: 1.6rem;
+  }
+
+  a {
+    color: $color-black;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+
+    &:hover {
+      color: $color-blue;
+    }
+
+    &:active {
+      color: #233759;
+    }
+  }
+}

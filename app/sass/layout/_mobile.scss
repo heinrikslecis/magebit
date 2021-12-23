@@ -1,0 +1,150 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+  /*============ NAVIGATION ============*/
+
+  .navbar {
+    padding: 1rem 2rem 1.6rem 2rem;
+    background: #ffffff;
+    min-width: 33.5rem;
+
+    .nav-menu {
+      margin-top: 1.6rem;
+
+      .nav-item {
+        margin-left: 1.6rem;
+
+        .nav-link {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .ic-pineapple {
+    display: none;
+  }
+  /*============ CONTENT ============*/
+  .left {
+    padding: 0;
+    width: 100%;
+  }
+
+  .right {
+    position: absolute;
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 3rem 2rem 3rem 2rem;
+    width: 33.5rem;
+    margin-top: 18.8rem;
+    background: linear-gradient(180deg, #ffffff 0%, $color-grey-white 100%);
+    margin-left: auto;
+    margin-right: auto;
+
+    &.subscribe .ic-success {
+      margin-bottom: 3.9rem;
+    }
+
+    .main-text {
+      h1 {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        margin: 0;
+      }
+      p {
+        line-height: 2.6rem;
+        padding: 0;
+        margin: 1rem 0 2rem 0;
+        font-size: 1.4rem;
+      }
+      &.subscribe {
+        margin-bottom: 3.9rem;
+        p {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .container-image {
+    position: absolute;
+    min-width: 0;
+    min-height: 0;
+    float: none;
+  }
+
+  /*============ EMAIL ============*/
+
+  .email {
+    margin: 0;
+
+    input#mail {
+      height: 6rem;
+      padding: 1.8rem 4.9rem 1.8rem 1.5rem;
+      width: 29.5rem;
+      font-size: 1.6rem;
+    }
+    #submit-btn {
+      right: 0;
+      height: 6rem;
+      width: 5rem;
+    }
+    .ic-arrow::before {
+      right: 2rem;
+      top: 2.3rem;
+    }
+    .error {
+      width: 100%;
+      font-size: 1.4rem;
+      position: relative;
+    }
+  }
+
+  /*============ CHECKBOX ============*/
+  .checkbox-container {
+    margin: 2rem 0 0 0;
+
+    p,
+    a {
+      font-size: 1.6rem;
+    }
+  }
+
+  /*============ FOOTER ============*/
+  hr.subscribe,
+  hr {
+    margin: 2rem 0 2rem 0;
+  }
+  .icons {
+    margin-left: 3rem;
+    text-align: unset;
+
+    .socials {
+      margin: 0 0.4rem 0 0.3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .left {
+    padding: 10rem;
+    background: linear-gradient(180deg, #ffffff 0%, $color-grey-white 100%);
+    width: 68rem;
+    height: 100%;
+    min-height: 94rem;
+  }
+  .right {
+    position: relative;
+    min-height: 94rem;
+    width: calc(100% - 68rem);
+  }
+  .ic-arrow:before {
+    left: 59.9rem;
+  }
+  button[type="submit"] {
+    left: 58rem;
+  }
+  .main-content.subscribe {
+    margin: 12.9rem 4rem 4rem;
+  }
+}

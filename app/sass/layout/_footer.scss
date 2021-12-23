@@ -1,0 +1,108 @@
+/*============ FOOTER ============*/
+hr {
+  margin: 5rem 4rem 5rem 4rem;
+  border: 0;
+  border-bottom: 0.1rem solid $color-grey-light;
+
+  &.subscribe {
+    margin: 5rem 0;
+  }
+}
+
+.icons {
+  text-align: center;
+
+  .socials {
+    display: inline-block;
+    border: 0.2rem solid #e2e3e4;
+    border-radius: 50%;
+    margin: 0 0.8rem 0 0.9rem;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 2rem 4rem rgba(19, 24, 33, 0.3);
+    }
+
+    span {
+      color: $color-black;
+      opacity: 0.3;
+      display: table-row;
+    }
+
+    &:hover span,
+    &:active span {
+      color: #ffffff;
+      opacity: 1;
+    }
+
+    .ic-instagram,
+    .ic-facebook {
+      font-size: 1.6rem;
+    }
+
+    .ic-youtube {
+      font-size: 1.1rem;
+    }
+
+    .ic-twitter {
+      font-size: 1.3rem;
+    }
+  }
+
+  #facebook:hover {
+    background-color: #4267b2;
+    border-color: #4267b2;
+  }
+
+  #instagram:hover {
+    background-color: #c13584;
+    border-color: #c13584;
+  }
+
+  #twitter:hover {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+  }
+
+  #youtube:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+
+  #facebook:active {
+    background-color: #2f4a80;
+    border-color: #2f4a80;
+  }
+
+  #instagram:active {
+    background-color: #8f2762;
+    border-color: #8f2762;
+  }
+
+  #twitter:active {
+    background-color: #177fbf;
+    border-color: #177fbf;
+  }
+
+  #youtube:active {
+    background-color: #cc0000;
+    border-color: #cc0000;
+  }
+
+  #facebook {
+    padding: 1.3rem 1.7rem;
+  }
+
+  #instagram {
+    padding: 1.3rem;
+  }
+
+  #twitter {
+    padding: 1.5rem 1.3rem 1.4rem 1.3rem;
+  }
+
+  #youtube {
+    padding: 1.5rem 1.3rem 1.6rem 1.3rem;
+  }
+}
