@@ -11,6 +11,7 @@
 ## Usage
 
 Configure database params at `"app/config/config.php"`
+
 If you are not using localhost as host, you should change URLROOT at `"app/config/config.php"` to your Root URL
 
 To access index page type URL root `"http://localhost/magebit/"`
