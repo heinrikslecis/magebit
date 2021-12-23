@@ -18,7 +18,7 @@ To access index page type URL root `"http://localhost/magebit/"`
 To access all saved data from database type `"http://localhost/magebit/data"`
 
 ## Compile yourself
-I have included composer and compiled scss stylesheet in repo but
+I have included autoloader and compiled scss stylesheet in repo but
 If you wish to install autoloader and compile sass yourself:
 1. Install Composer autoloader
    ```sh
